@@ -1,0 +1,243 @@
+{% extends 'base.html' %}
+{% block title %} {{course.name}} {% endblock title %}
+{% block css %} <link rel="stylesheet" href="/static/courseview.css"> {% endblock %}
+{% block body %}
+<div class="box-shadow-hover">
+  <h1>Course Content</h1>
+</div>
+<div class="accordion-container">
+
+  <div class="accordion">
+    <div class="accordion-header">
+      <span class="icon">+</span>
+      <h3>{{course.section_1}}</h3>
+    </div>
+    <div class="accordion-body">
+      <div class="row d-flex justify-content-center mb-3">
+      </div>
+
+    <a href="{{course.sec_1_link_1}}" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>{{course.sec1_lnk1_name}}</a>
+      <br>
+      <br>
+      <div class="row d-flex justify-content-center mb-3">
+        <div id="player-overlay">
+          <a href="{{course.sec_1_link_2}}" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>{{course.sec1_lnk2_name}}</a>
+        </div>
+      </div>
+      <br>
+      <div class="row d-flex justify-content-center mb-3">
+        <div id="player-overlay">
+          <a href="{{course.sec_1_link_3}}" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>{{course.sec1_lnk3_name}}</a>
+        </div>
+      </div>
+      <br>
+      <div class="row d-flex justify-content-center mb-3">
+        <div id="player-overlay">
+          <a href="{{course.sec_1_link_4}}" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>{{course.sec1_lnk4_name}}</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <div class="accordion-header">
+        <span class="icon">+</span>
+        <h3>{{course.section_2}}</h3>
+      </div>
+      <div class="accordion-body">
+        <div class="row d-flex justify-content-center mb-3">
+          <div id="player-overlay">
+          <a href="{{course.sec_2_link_1}}" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>{{course.sec2_lnk1_name}}</a>
+          </div>
+        </div>
+        <br>
+        <div class="row d-flex justify-content-center mb-3">
+          <div id="player-overlay">
+            <a href="{{course.sec_2_link_2}}" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>{{course.sec2_lnk2_name}}</a>
+          </div>
+        </div>
+        <br>
+        <div class="row d-flex justify-content-center mb-3">
+          <div id="player-overlay">
+            <a href="{{course.sec_2_link_3}}" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>{{course.sec2_lnk3_name}}</a>
+          </div>
+        </div>
+        <br>
+        <div class="row d-flex justify-content-center mb-3">
+          <div id="player-overlay">
+            <a href="{{course.sec_2_link_4}}" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>{{course.sec2_lnk4_name}}</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-header">
+          <span class="icon">+</span>
+          <h3>{{course.section_3}}</h3>
+        </div>
+        <div class="accordion-body">
+          <div class="row d-flex justify-content-center mb-3">
+            <div id="player-overlay">
+            <a href="{{course.sec_3_link_1}}" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>{{course.sec3_lnk1_name}}</a>
+            </div>
+          </div>
+          <br>
+          <div class="row d-flex justify-content-center mb-3">
+            <div id="player-overlay">
+              <a href="{{course.sec_3_link_2}}" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>{{course.sec3_lnk2_name}}</a>
+            </div>
+          </div>
+          <br>
+          <div class="row d-flex justify-content-center mb-3">
+            <div id="player-overlay">
+              <a href="{{course.sec_3_link_3}}" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>{{course.sec3_lnk3_name}}</a>
+            </div>
+          </div>
+          <br>
+          <div class="row d-flex justify-content-center mb-3">
+            <div id="player-overlay">
+              <a href="{{course.sec_3_link_4}}" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>{{course.sec3_lnk4_name}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-header">
+          <span class="icon">+</span>
+          <h3>{{course.section_4}}</h3>
+        </div>
+        <div class="accordion-body">
+          <div class="row d-flex justify-content-center mb-3">
+            <div id="player-overlay">
+              <a href="{{course.sec_4_link_1}}" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>{{course.sec4_lnk1_name}}</a>
+            </div>
+          </div>
+          <br>
+          <div class="row d-flex justify-content-center mb-3">
+            <div id="player-overlay">
+              <a href="{{course.sec_4_link_2}}" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>{{course.sec4_lnk2_name}}</a>
+            </div>
+          </div>
+          <br>
+          <div class="row d-flex justify-content-center mb-3">
+            <div id="player-overlay">
+              <a href="{{course.sec_4_link_3}}" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>{{course.sec4_lnk3_name}}</a>
+            </div>
+          </div>
+          <br>
+          <div class="row d-flex justify-content-center mb-3">
+            <div id="player-overlay">
+              <a href="{{course.sec_4_link_4}}" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>{{course.sec4_lnk4_name}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-header">
+          <span class="icon">+</span>
+          <h3>{{course.section_5}}</h3>
+        </div>
+        <div class="accordion-body">
+          <div class="row d-flex justify-content-center mb-3">
+            <div id="player-overlay">
+              <a href="{{course.sec_5_link_1}}" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>{{course.sec5_lnk1_name}}</a>
+            </div>
+          </div>
+          <br>
+
+          <div class="row d-flex justify-content-center mb-3">
+            <div id="player-overlay">
+              <a href="{{course.sec_5_link_2}}" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>{{course.sec5_lnk2_name}}</a>
+            </div>
+          </div>
+          <br>
+          <div class="row d-flex justify-content-center mb-3">
+            <div id="player-overlay">
+              <a href="{{course.sec_5_link_3}}" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>{{course.sec5_lnk3_name}}</a>
+            </div>
+          </div>
+          <br>
+          <div class="row d-flex justify-content-center mb-3">
+            <div id="player-overlay">
+              <a href="{{course.sec_5_link_4}}" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>{{course.sec5_lnk4_name}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="accordion">
+        <div class="accordion-header">
+          <span class="icon">+</span>
+            <h3>Quiz Section</h3>
+        </div>
+        <div class="accordion-body">
+          <div class="row d-flex justify-content-center mb-3">
+            <div id="player-overlay">
+              <a href="/quiz/{{course.id}}" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>{{course.quiz}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+
+        $(document).ready(function () {
+
+          $('.accordion-header').click(function () {
+            $('.accordion .accordion-body').slideUp();
+            $(this).next('.accordion-body').slideDown();
+            $('.accordion .accordion-header .icon').text('+');
+            $(this).children('.icon').text('-');
+          });
+        });
+
+      </script>
+
+    </div>
+
+  </div>
+  {% endblock %}
